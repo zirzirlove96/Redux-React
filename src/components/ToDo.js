@@ -13,7 +13,7 @@ function ToDo ({text, onClickbtn, id }) {
 
 function mapDispatchToProps(dispatch, ownProps){
     return {
-        onClickbtn : () => dispatch(actionCreators.deleteTodo(ownProps.id))
+        onClickbtn : () => dispatch(actionCreators.deleteToDo(ownProps.id))
     }
 }
 export default connect(null, mapDispatchToProps)(ToDo);
